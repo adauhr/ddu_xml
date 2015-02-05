@@ -1,6 +1,7 @@
 #Modèle XML INSPIRE pour les documents d'urbanisme (POS/PLU/PLUi/CC/PSMV)
 
 ##Prescriptions nationales pour la dématérialisation des documents d’urbanisme
+##["Contenu de l'étude"](https://github.com/adauhr/ddu_xml/wiki/Home)
 
 ##Modèle XML - Fiche de Métadonnées INSPIRE 
 
