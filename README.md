@@ -3,7 +3,7 @@
 ##Prescriptions nationales pour la dématérialisation des documents d’urbanisme
 ##["Contenu de l'étude"](https://github.com/adauhr/ddu_xml/wiki/Home)
 
-##["Modèle XML - Fiche de Métadonnées INSPIRE"](https://github.com/adauhr/ddu_xml/inspire_model_ddu.xml) 
+##["Modèle XML - Fiche de Métadonnées INSPIRE"](https://github.com/adauhr/ddu_xml/blob/master/inspire_model_ddu.xml) 
 
 ![logo](http://cnig.gouv.fr/wp-content/uploads/2015/01/bandeauCNIG2.png) 
 
