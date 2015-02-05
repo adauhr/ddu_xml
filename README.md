@@ -2,9 +2,12 @@
 
 ##Prescriptions nationales pour la dématérialisation des documents d’urbanisme
 
-##Modèle XML  
-##Fiche de Métadonnées INSPIRE 
-##Document d'urbanisme POS/PLU/CC/PLUi/PSMV 
+##Modèle XML - Fiche de Métadonnées INSPIRE 
+Document d'urbanisme POS/PLU/CC/PLUi/PSMV 
+
+
+[logo](http://cnig.gouv.fr/wp-content/uploads/2015/01/bandeauCNIG2.png) 
+
 
 L'installation du Geoportal ne pose pas de difficultés en soi et est bien documentée dans le document PDF intégré dans le ZIP du téléchargement. La version [geoportal-1.2.zip](http://sourceforge.net/projects/geoportal/files/Distribution/v1.2/geoportal-1.2.zip/download) est celle installée sous [Infogeo68](http://www.infogeo68.fr/Infogeo68/CMS/metadonnees).
 
