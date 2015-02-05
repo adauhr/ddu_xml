@@ -20,10 +20,11 @@
 ###Version
     V0.a
 ###Contributeurs
-    Le groupe de travail sur la dématérialisation des documents d'urbanisme 
-    du CNIG. Les participants du groupe sont (CEREMA, GeoBretagne, le Crige
-    PACA, AITF, le grand Avignon, SIEA, la FNAU, l'ADAUHR, la DDTM de 
-    vendée, la Ville de Cergy …)
+    ADAUHR/D.Esnault - CIGAL/G.RYCKELYNCK - SI17/J.TEXEIRA - ...
+    pour le compte du groupe de travail sur la dématérialisation des 
+    documents d'urbanisme du CNIG. Les participants du groupe sont 
+    (CEREMA, GeoBretagne, le Crige, PACA, AITF, le grand Avignon, 
+    SIEA, la FNAU, l'ADAUHR, la DDTM de Vendée, la Ville de Cergy …)
 ###Format
     Formats disponibles du fichier : OpenOffice Writer (.odt), Adobe PDF
 ###Sources
