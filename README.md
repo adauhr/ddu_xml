@@ -1,7 +1,10 @@
-# ddu_xml
-Modèle XML INSPIRE pour les documents d'urbanisme (POS/PLU/PLUi/CC/PSMV)
+#Modèle XML INSPIRE pour les documents d'urbanisme (POS/PLU/PLUi/CC/PSMV)
 
-## Installation
+##Prescriptions nationales pour la dématérialisation des documents d’urbanisme
+
+##Modèle XML  
+##Fiche de Métadonnées INSPIRE 
+##Document d'urbanisme POS/PLU/CC/PLUi/PSMV 
 
 L'installation du Geoportal ne pose pas de difficultés en soi et est bien documentée dans le document PDF intégré dans le ZIP du téléchargement. La version [geoportal-1.2.zip](http://sourceforge.net/projects/geoportal/files/Distribution/v1.2/geoportal-1.2.zip/download) est celle installée sous [Infogeo68](http://www.infogeo68.fr/Infogeo68/CMS/metadonnees).
 
