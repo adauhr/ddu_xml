@@ -21,7 +21,9 @@
 ###Version
     V0.a
 ###Contributeurs
-    ADAUHR/D.Esnault - CIGAL/G.RYCKELYNCK - SI17/J.TEXEIRA - ...
+    ADAUHR/D.Esnault 
+    avec la participation de ...
+    
     pour le compte du groupe de travail sur la dématérialisation des 
     documents d'urbanisme du CNIG. Les participants du groupe sont 
     (CEREMA, GeoBretagne, le Crige, PACA, AITF, le grand Avignon, 
