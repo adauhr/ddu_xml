@@ -19,18 +19,19 @@
     Ce présent document décrit le contenu du modèle XML relatif au 
     document d'urbanisme
 ###Version
-    V0.a
+    V0.b
 ###Contributeurs
     ADAUHR/D.Esnault 
-    avec la participation de ...
+    CIGAL/G. Ryckelinck
+    SI17/J. Texeira
+    Région Bretagne/L. Ecault
     
     pour le compte du groupe de travail sur la dématérialisation des 
     documents d'urbanisme du CNIG. Les participants du groupe sont 
     (CEREMA, GeoBretagne, le Crige, PACA, AITF, le grand Avignon, 
     SIEA, la FNAU, l'ADAUHR, la DDTM de Vendée, la Ville de Cergy …)
 ###Format
-    Formats disponibles du fichier : OpenOffice Writer (.odt), Adobe PDF
-###Sources
+    Format disponible du fichier : XML
     CNIG, Plan local d'urbanisme – Prescriptions nationales pour la
     dématérialisation des documents d’urbanisme . CNIG
     Code de l'urbanisme – version consolidée à la date d'octobre 2014
