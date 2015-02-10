@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-Fiche de métadonnées du PLU de Holtzwihr approuvé le 24 janvier 2013
+Fiche de métadonnées :
+	- du PLU de XXX approuvé le AAAA-MM-JJ
+	- du POS de XXX approuvé le AAAA-MM-JJ
+	- du PLUi de XXX approuvé le AAAA-MM-JJ
+	- de la Carte Communale (CC) de XXXX approuvé le AAAA-MM-JJ
+	- du Plan de sauvegarde et de mise en valeur (PSMV) de XXX approuvé le AAAA-MM-JJ
+	où : 
+	- XXX est le nom de la commune ou de la communauté de communes
+	- AAAA-MM-JJ est la date sous la forme ANNEE-MOIS-JOUR
 -->
-<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<!-- Identifiant unique interne de type {0A865F69-388C-40F8-8A3D-BF59FFB74AB8}. Ce numéro interne unique est souvent lié au catalogue de métadonnées utilisé mais peut être géré dans l'éditeur de métadonnées (ex: fr-000068143-plu20130124)
+<gmd:MD_Metadata xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<!-- Identifiant unique interne de type {0A865F69-388C-40F8-8A3D-BF59FFB74AB8}. 
+	Ce numéro interne unique est souvent lié au catalogue de métadonnées utilisé 
+	mais peut être géré dans l'éditeur de métadonnées (ex: fr-000068143-plu20130124) identique par exemple à l'identificateur unique de la ressource.
 	-->
 	<gmd:fileIdentifier>
-		<gco:CharacterString>fr-000068143-plu20130124</gco:CharacterString>
+		<gco:CharacterString>--Identifiant unique interne--</gco:CharacterString>
 	</gmd:fileIdentifier>
 	<!-- Langue utilisée / Français fre	-->
 	<gmd:language>
@@ -16,7 +26,7 @@ Fiche de métadonnées du PLU de Holtzwihr approuvé le 24 janvier 2013
 	<gmd:characterSet>
 		<gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
 	</gmd:characterSet>
-	<!-- Type de ressource / Série de données géographiques <-> dataset
+	<!-- Type de ressource / Série de données géographiques <->dataset
 	>>(P4. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
 	<gmd:hierarchyLevel>
 		<gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmx Codelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
@@ -25,17 +35,25 @@ Fiche de métadonnées du PLU de Holtzwihr approuvé le 24 janvier 2013
 	>>(P10. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
 	<gmd:contact>
 		<gmd:CI_ResponsibleParty>
-			<!-- Nom de l'organisme -->
+			<!-- Nom de l'organisme
+			Ex. : Mairie de Holtzwihr
+			Ex. : Concarneau Cornouaille Agglomération
+			Ex. : ...
+			-->
 			<gmd:organisationName>
-				<gco:CharacterString>Mairie de Holtzwihr</gco:CharacterString>
+				<gco:CharacterString>--Organisme / Contact de la métadonnée--</gco:CharacterString>
 			</gmd:organisationName>
 			<gmd:contactInfo>
 				<gmd:CI_Contact>
 					<gmd:address>
 						<gmd:CI_Address>
-							<!-- Adresse électronique -->
+							<!-- Adresse électronique 
+							Ex. : mairie.holtzwihr@wanadoo.fr
+							Ex. : sig@cc-concarneaucornouaille.fr 
+							Ex. : ...
+							-->
 							<gmd:electronicMailAddress>
-								<gco:CharacterString>mairie.holtzwihr@wanadoo.fr</gco:CharacterString>
+								<gco:CharacterString>--contact_metadonnees@organisme.fr--</gco:CharacterString>
 							</gmd:electronicMailAddress>
 						</gmd:CI_Address>
 					</gmd:address>
@@ -47,9 +65,12 @@ Fiche de métadonnées du PLU de Holtzwihr approuvé le 24 janvier 2013
 			</gmd:role>
 		</gmd:CI_ResponsibleParty>
 	</gmd:contact>
-	<!-- Date de saisie de la fiche de métadonnées -->
+	<!-- Date de saisie de la fiche de métadonnées 
+	Ex. : 2015-02-05 sous la forme AAAA (année) - MM (mois) - JJ (jour)
+	Ex. : ...
+	-->
 	<gmd:dateStamp>
-		<gco:Date>2015-02-05</gco:Date>
+		<gco:Date>0001-01-01</gco:Date>
 	</gmd:dateStamp>
 	<!-- Standard Règles de métadonnées 
 	http://inspire.ec.europa.eu/documents/Metadata/MD_IR_and_ISO_20131029.pdf Version 1.3 2013-10-29 -->
@@ -59,14 +80,19 @@ Fiche de métadonnées du PLU de Holtzwihr approuvé le 24 janvier 2013
 	<gmd:metadataStandardVersion>
 		<gco:CharacterString>Technical Guidelines based on EN ISO 19115 and EN ISO 19119 (Version 1.3)</gco:CharacterString>
 	</gmd:metadataStandardVersion>
-	<!-- Rectangle de coordonnées 
-	>>(P6. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
+	<!-- Référentiel de coordonnées 
+	>>(P6. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) 
+	Ex. : RGF93 / Lambert 93 (EPSG: 2154)
+	Ex. : RGF93 / CC48 (EPSG:3948)
+	Ex. : RGR92/UTM Sud fuseau 40 pour l'outre-mer (La réunion)
+	Ex. : ...
+	-->
 	<gmd:referenceSystemInfo>
 		<gmd:MD_ReferenceSystem>
 			<gmd:referenceSystemIdentifier>
 				<gmd:RS_Identifier>
 					<gmd:code>
-						<gco:CharacterString>RGF93 / CC48 (EPSG:3948)</gco:CharacterString>
+						<gco:CharacterString>--Référentiel de coordonnées--</gco:CharacterString>
 					</gmd:code>
 				</gmd:RS_Identifier>
 			</gmd:referenceSystemIdentifier>
@@ -76,17 +102,28 @@ Fiche de métadonnées du PLU de Holtzwihr approuvé le 24 janvier 2013
 		<gmd:MD_DataIdentification>
 			<gmd:citation>
 				<!-- Intitulé de la ressource 
-				>>(P3. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
+				>>(P3. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) 
+				Ex. : Plan local d'urbanisme de Holtzwihr
+				Ex. : Plan local d’urbanisme de Lyon
+				Ex. : Plan d’occupation des sols de Hoenheim
+				Ex. : Plan local d’urbanisme intercommunal du Grand Rodez
+				Ex. : Carte communale de Belvédère
+				Ex. : Plan de sauvegarde et de mise en valeur du Vieux-Lyon
+				Ex. : ...
+				-->
 				<gmd:CI_Citation>
 					<gmd:title>
-						<gco:CharacterString>Plan Local d’Urbanisme de Holtzwihr</gco:CharacterString>
+						<gco:CharacterString>--Intitulé de la ressource--</gco:CharacterString>
 					</gmd:title>
 					<!-- Dates de référence DATAPPRO / Date d'approbation du document d'urbanisme avec un type de date, révision 
-					>>(P7. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
+					>>(P7. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) 
+					Ex. : 2013-01-24 sous la forme AAAA (année) - MM (mois) - JJ (jour)
+					Ex. : ...
+					-->
 					<gmd:date>
 						<gmd:CI_Date>
 							<gmd:date>
-								<gco:Date>2013-01-24</gco:Date>
+								<gco:Date>0001-01-01</gco:Date>
 							</gmd:date>
 							<gmd:dateType>
 								<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmx Codelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
@@ -94,20 +131,34 @@ Fiche de métadonnées du PLU de Holtzwihr approuvé le 24 janvier 2013
 						</gmd:CI_Date>
 					</gmd:date>
 					<!-- Identificateur de ressource unique 
-					>>(P5. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
+					>>(P5. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) 
+					Ex. : pour le PLU de la commune de Holtzwihr approuvé le 24 janvier 2O13 = fr-000068143-plu20130124 
+					Ex. : pour une commune ayant approuvé son PLU le 12 juin 2013 = fr-000035206-plu20130612
+					Ex. : pour une intercommunalité ayant le n° SIREN  243500139, ayant approuvé son PLUi le 12 juin 2013 = fr-243500139-plui20130612
+					Ex. : l'identificateur à terme pourra être une URI
+					Ex. : ...
+					-->
 					<gmd:identifier>
 						<gmd:RS_Identifier>
 							<gmd:code>
-								<gco:CharacterString>fr-000068143-plu20130124</gco:CharacterString>
+								<gco:CharacterString>--Identificateur de ressource unique--</gco:CharacterString>
 							</gmd:code>
 						</gmd:RS_Identifier>
 					</gmd:identifier>
 				</gmd:CI_Citation>
 			</gmd:citation>
 			<!-- Résumé de la ressource 
-			>>(P3. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
+			>>(P3. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) 
+			Ex. pour le PLU de Holtzwihr : Plan local d'urbanisme (PLU) numérisé. Ce lot informe du droit à bâtir sur la commune de Holtzwihr. Ce PLU est numérisé conformément aux prescriptions nationales du CNIG v2014
+			Ex.  pour un PLU : Plan local d'urbanisme (PLU) numérisé. Ce lot informe du droit à bâtir sur la commune de XX. Ce PLU est numérisé conformément aux prescriptions nationales du CNIG.
+			Ex. pour un POS : Plan d'occupation des sols (POS) numérisé. Ce lot informe du droit à bâtir sur la commune de XX. Ce POS est numérisé conformément aux prescriptions nationales du CNIG.
+			Ex. pour un PSMV : Plan de sauvegarde et de mise en valeur (PSMV) numérisé. Ce lot informe du droit à bâtir sur le secteur sauvegardé de XX. Ce PSMV est numérisé conformément aux prescriptions nationales du CNIG.
+			Ex. pour un PLUi : Plan local d'urbanisme numérisé. Ce lot informe du droit à bâtir sur la commune de XX. Ce PLUi est numérisé conformément aux prescriptions nationales du CNIG.
+			Ex. pour une CC : Carte communale (CC) numérisée. Ce lot informe du droit à bâtir sur la commune de XX. Cette CC est numérisée conformément aux prescriptions nationales du CNIG.
+			Ex. : ...	
+			-->
 			<gmd:abstract>
-				<gco:CharacterString>Plan local d'urbanisme (PLU) numérisé. Ce lot informe du droit à bâtir sur la commune de Holtzwihr. Ce PLU est numérisé conformément aux prescriptions nationales du CNIG v2014</gco:CharacterString>
+				<gco:CharacterString>--Résumé de la ressource--</gco:CharacterString>
 			</gmd:abstract>
 			<!-- Organisme responsable de la ressource 
 			>>(P10. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
@@ -115,7 +166,7 @@ Fiche de métadonnées du PLU de Holtzwihr approuvé le 24 janvier 2013
 				<gmd:CI_ResponsibleParty>
 					<!-- Nom de l'organisme -->
 					<gmd:organisationName>
-						<gco:CharacterString>Mairie de Holtzwihr</gco:CharacterString>
+						<gco:CharacterString>--Organisme responsable de la ressource--</gco:CharacterString>
 					</gmd:organisationName>
 					<gmd:contactInfo>
 						<gmd:CI_Contact>
@@ -123,7 +174,7 @@ Fiche de métadonnées du PLU de Holtzwihr approuvé le 24 janvier 2013
 								<gmd:CI_Address>
 									<!-- Adresse électronique -->
 									<gmd:electronicMailAddress>
-										<gco:CharacterString>mairie.holtzwihr@wanadoo.fr</gco:CharacterString>
+										<gco:CharacterString>--contact_donnees@organisme.fr--</gco:CharacterString>
 									</gmd:electronicMailAddress>
 								</gmd:CI_Address>
 							</gmd:address>
@@ -135,7 +186,7 @@ Fiche de métadonnées du PLU de Holtzwihr approuvé le 24 janvier 2013
 					</gmd:role>
 				</gmd:CI_ResponsibleParty>
 			</gmd:pointOfContact>
-			<!-- Mot clé : thème INSPIRE / Usage des sols <-> Land use 
+			<!-- Mot clé : thème INSPIRE / Usage des sols <->palnningCadastre 
 			>>(P6. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
 			<gmd:descriptiveKeywords>
 				<gmd:MD_Keywords>
@@ -187,12 +238,15 @@ Fiche de métadonnées du PLU de Holtzwihr approuvé le 24 janvier 2013
 					</gmd:thesaurusName>
 				</gmd:MD_Keywords>
 			</gmd:descriptiveKeywords>
-			<!-- Mots clés libres : PLU, Planification 
-			>>(P6. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
+			<!-- Mots clés libres : plu, planification 
+			>>(P6. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) 
+			les mots clés seront employés en fonction du type de document plu, pos, plui, psmv
+			type de document d'urbanisme peut prendre la valeur : plu, pos, plui, psmv, cc
+			-->
 			<gmd:descriptiveKeywords>
 				<gmd:MD_Keywords>
 					<gmd:keyword>
-						<gco:CharacterString>plu</gco:CharacterString>
+						<gco:CharacterString>--type de document d'urbanisme--</gco:CharacterString>
 					</gmd:keyword>
 				</gmd:MD_Keywords>
 			</gmd:descriptiveKeywords>
@@ -214,50 +268,46 @@ Fiche de métadonnées du PLU de Holtzwihr approuvé le 24 janvier 2013
 					</gmd:keyword>
 				</gmd:MD_Keywords>
 			</gmd:descriptiveKeywords>
-			<!-- Contraintes 
+			<!--Contraintes
 			>>(P9. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
-			<!-- Contraintes d'usage -->
 			<gmd:resourceConstraints>
+				<!-- Contraintes d'usage /  Information sur le type d'usage  / Aucune -->
 				<gmd:MD_Constraints>
 					<gmd:useLimitation>
 						<gco:CharacterString>Aucune condition ne s'applique</gco:CharacterString>
 					</gmd:useLimitation>
 				</gmd:MD_Constraints>
 			</gmd:resourceConstraints>
-			<!-- Contraintes légales -->
 			<gmd:resourceConstraints>
+				<!-- Contraintes légales -->
 				<gmd:MD_LegalConstraints>
+					<!-- <gmd:useLimitation><gco:CharacterString>Aucune condition d'accès ne s'applique</gco:CharacterString></gmd:useLimitation>-->
 					<gmd:accessConstraints>
 						<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
 					</gmd:accessConstraints>
-					<gmd:useConstraints>
-						<gmd:MD_RestrictionCode codeSpace="ISOTC211/19115" codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
-					</gmd:useConstraints>
 					<gmd:otherConstraints>
 						<gco:CharacterString>Pas de restriction d'accès public</gco:CharacterString>
 					</gmd:otherConstraints>
 				</gmd:MD_LegalConstraints>
 			</gmd:resourceConstraints>
-			<gmd:resourceConstraints>
-				<gmd:MD_SecurityConstraints>
-					<gmd:classification>
-						<gmd:MD_ClassificationCode codeSpace="ISOTC211/19115" codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ClassificationCode" codeListValue="unclassified">unclassified</gmd:MD_ClassificationCode>
-					</gmd:classification>
-				</gmd:MD_SecurityConstraints>
-			</gmd:resourceConstraints>
+			<!-- Contraintes de sécurité / 
+			Ne s'applique pas pour les doc. d'urbanisme 
+			-->
 			<!-- Type de représentation 
 			>>(P6. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
 			<gmd:spatialRepresentationType>
 				<gmd:MD_SpatialRepresentationTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector">vector</gmd:MD_SpatialRepresentationTypeCode>
 			</gmd:spatialRepresentationType>
 			<!-- Résolution spatiale 
-			>>(P8. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
+			>>(P8. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) 
+			Ex. : 5000
+			-->
 			<gmd:spatialResolution>
 				<gmd:MD_Resolution>
 					<gmd:equivalentScale>
 						<gmd:MD_RepresentativeFraction>
 							<gmd:denominator>
-								<gco:Integer>5000</gco:Integer>
+								<gco:Integer>1</gco:Integer>
 							</gmd:denominator>
 						</gmd:MD_RepresentativeFraction>
 					</gmd:equivalentScale>
@@ -284,16 +334,16 @@ Fiche de métadonnées du PLU de Holtzwihr approuvé le 24 janvier 2013
 					<gmd:geographicElement>
 						<gmd:EX_GeographicBoundingBox>
 							<gmd:westBoundLongitude>
-								<gco:Decimal>7.39539</gco:Decimal>
+								<gco:Decimal>-180</gco:Decimal>
 							</gmd:westBoundLongitude>
 							<gmd:eastBoundLongitude>
-								<gco:Decimal>7.44122</gco:Decimal>
+								<gco:Decimal>180</gco:Decimal>
 							</gmd:eastBoundLongitude>
 							<gmd:southBoundLatitude>
-								<gco:Decimal>48.09857</gco:Decimal>
+								<gco:Decimal>-90</gco:Decimal>
 							</gmd:southBoundLatitude>
 							<gmd:northBoundLatitude>
-								<gco:Decimal>48.13329</gco:Decimal>
+								<gco:Decimal>90</gco:Decimal>
 							</gmd:northBoundLatitude>
 						</gmd:EX_GeographicBoundingBox>
 					</gmd:geographicElement>
@@ -301,6 +351,7 @@ Fiche de métadonnées du PLU de Holtzwihr approuvé le 24 janvier 2013
 			</gmd:extent>
 		</gmd:MD_DataIdentification>
 	</gmd:identificationInfo>
+	<!-- Encodage et localisateur -->
 	<gmd:distributionInfo>
 		<gmd:MD_Distribution>
 			<!-- Encodage 
@@ -308,21 +359,21 @@ Fiche de métadonnées du PLU de Holtzwihr approuvé le 24 janvier 2013
 			<gmd:distributionFormat>
 				<gmd:MD_Format>
 					<gmd:name>
-						<gco:CharacterString>SHP</gco:CharacterString>
+						<gco:CharacterString>--Format--</gco:CharacterString>
 					</gmd:name>
 					<gmd:version>
-						<gco:CharacterString>1.0</gco:CharacterString>
+						<gco:CharacterString>--Version--</gco:CharacterString>
 					</gmd:version>
 				</gmd:MD_Format>
 			</gmd:distributionFormat>
+			<!-- Localisateur de la ressource 
+			>>(P3. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
 			<gmd:transferOptions>
 				<gmd:MD_DigitalTransferOptions>
 					<gmd:onLine>
-						<!-- Localisateur de la ressource 
-						>>(P3. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
 						<gmd:CI_OnlineResource>
 							<gmd:linkage>
-								<gmd:URL>http://www.holtzwihr.fr/fr-000068143-plu20130124.zip</gmd:URL>
+								<gmd:URL>http://--organisme.fr/lien--</gmd:URL>
 							</gmd:linkage>
 						</gmd:CI_OnlineResource>
 					</gmd:onLine>
@@ -343,7 +394,7 @@ Fiche de métadonnées du PLU de Holtzwihr approuvé le 24 janvier 2013
 				<gmd:DQ_DomainConsistency>
 					<gmd:result>
 						<gmd:DQ_ConformanceResult>
-							<!-- Spécification 
+							<!-- Spécification CNIG DDU
 							>>(P8. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
 							<gmd:specification>
 								<gmd:CI_Citation>
@@ -369,6 +420,35 @@ Fiche de métadonnées du PLU de Holtzwihr approuvé le 24 janvier 2013
 							>>(P9. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
 							<gmd:pass>
 								<gco:Boolean>true</gco:Boolean>
+							</gmd:pass>
+						</gmd:DQ_ConformanceResult>
+					</gmd:result>
+					<gmd:result>
+						<gmd:DQ_ConformanceResult>
+							<!-- Spécification INSPIRE Land use
+							>>(P8. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
+							<gmd:specification>
+								<gmd:CI_Citation>
+									<gmd:title>
+										<gco:CharacterString>Data Specification on Land use - Draft Technical Guidelines 04.02.2013</gco:CharacterString>
+									</gmd:title>
+									<gmd:date>
+										<gmd:CI_Date>
+											<gmd:date>
+												<gco:Date>2013-04-02</gco:Date>
+											</gmd:date>
+											<gmd:dateType>
+												<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+											</gmd:dateType>
+										</gmd:CI_Date>
+									</gmd:date>
+								</gmd:CI_Citation>
+							</gmd:specification>
+							<gmd:explanation>
+								<gco:CharacterString>Degré de conformité de la ressource par rapport aux spécifications visées d'Inspire (Conforme, Non Conforme, Non Evalué)</gco:CharacterString>
+							</gmd:explanation>
+							<gmd:pass>
+								<gco:Boolean>false</gco:Boolean>
 							</gmd:pass>
 						</gmd:DQ_ConformanceResult>
 					</gmd:result>
