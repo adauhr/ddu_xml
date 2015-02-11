@@ -20,10 +20,10 @@
 ###Version
     V1.0
 ###Contributeurs
-    ADAUHR/D.Esnault 
+    ADAUHR/D.Esnault
+    Région Bretagne/L. Ecault
     CIGAL/G. Ryckelinck
     SI17/J. Texeira
-    Région Bretagne/L. Ecault
     
     pour le compte du groupe de travail sur la dématérialisation des 
     documents d'urbanisme du CNIG. Les participants du groupe sont 
