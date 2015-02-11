@@ -5,7 +5,6 @@
 
 ##["Modèle XML - Fiche de Métadonnées INSPIRE"](https://github.com/adauhr/ddu_xml/blob/master/inspire_model_ddu.xml) 
 
-![logo](http://cnig.gouv.fr/wp-content/uploads/2015/01/bandeauCNIG2.png) 
 
 ###Dates
     Février 2015
