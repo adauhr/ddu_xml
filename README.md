@@ -19,7 +19,7 @@
     Ce présent document décrit le contenu du modèle XML relatif au 
     document d'urbanisme
 ###Version
-    V0.b
+    V1.0
 ###Contributeurs
     ADAUHR/D.Esnault 
     CIGAL/G. Ryckelinck
