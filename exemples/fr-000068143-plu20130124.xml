@@ -251,18 +251,20 @@
 				<gmd:MD_DigitalTransferOptions>
 					<gmd:onLine>
 						<gmd:CI_OnlineResource>
-							<gmd:linkage>http://www.holtzwihr.fr/fr-000068143-plu20130124.zip</gmd:linkage>
-						 	<gmd:protocol>
-						 		<gco:CharacterString>WWW:DOWNLOAD-1.0-http-download</gco:CharacterString>
-						 	</gmd:protocol>
-						 	<gmd:name>
-						 		<gco:CharacterString>WWW:DOWNLOAD-1.0-http-download</gco:CharacterString>
-						 	</gmd:name>
-						 	<gmd:description>
-	                			<gco:CharacterString>Téléchargement du fichier du Plan Local d’Urbanisme de Holtzwihr</gco:CharacterString>
-	              			</gmd:description>
-						 	<gmd:function>
-						 		<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="download"/>
+							<gmd:linkage>
+								<gmd:URL>http://www.holtzwihr.fr/fr-000068143-plu20130124.zip</gmd:URL>
+							</gmd:linkage>
+							<gmd:protocol>
+								<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+							</gmd:protocol>
+							<gmd:name>
+								<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+							</gmd:name>
+							<gmd:description>
+                				<gco:CharacterString>Téléchargement du fichier du Plan Local d’Urbanisme de Holtzwihr</gco:CharacterString>
+              				</gmd:description>
+							<gmd:function>
+								<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="download"/>
 							</gmd:function>
 						</gmd:CI_OnlineResource>
 					</gmd:onLine>
