@@ -147,7 +147,7 @@ Fiche de métadonnées :
 					</gmd:identifier>
 				</gmd:CI_Citation>
 			</gmd:citation>
-			<!-- Résumé de la ressource 
+			<!-- Résumé de la ressource = document d'urbanisme
 			>>(P3. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) 
 			Ex. pour le PLU de Holtzwihr : Plan local d'urbanisme (PLU) numérisé. Ce lot informe du droit à bâtir sur la commune de Holtzwihr. Ce PLU est numérisé conformément aux prescriptions nationales du CNIG v2014
 			Ex.  pour un PLU : Plan local d'urbanisme (PLU) numérisé. Ce lot informe du droit à bâtir sur la commune de XX. Ce PLU est numérisé conformément aux prescriptions nationales du CNIG.
@@ -164,7 +164,7 @@ Fiche de métadonnées :
 			>>(P10. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
 			<gmd:pointOfContact>
 				<gmd:CI_ResponsibleParty>
-					<!-- Nom de l'organisme -->
+					<!-- Nom de l'organisme / maître d'ouvrage du document d'urbanisme -->
 					<gmd:organisationName>
 						<gco:CharacterString>--Organisme responsable de la ressource--</gco:CharacterString>
 					</gmd:organisationName>
@@ -186,7 +186,7 @@ Fiche de métadonnées :
 					</gmd:role>
 				</gmd:CI_ResponsibleParty>
 			</gmd:pointOfContact>
-			<!-- Mot clé : thème INSPIRE / Usage des sols <->palnningCadastre 
+			<!-- Mot clé : thème INSPIRE / Usage des sols 
 			>>(P6. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
 			<gmd:descriptiveKeywords>
 				<gmd:MD_Keywords>
@@ -240,8 +240,7 @@ Fiche de métadonnées :
 			</gmd:descriptiveKeywords>
 			<!-- Mots clés libres : plu, planification 
 			>>(P6. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) 
-			les mots clés seront employés en fonction du type de document plu, pos, plui, psmv
-			type de document d'urbanisme peut prendre la valeur : plu, pos, plui, psmv, cc
+			les mots clés seront employés en fonction du type du document d'urbanisme qui peut prendre la valeur : plu, pos, plui, psmv, cc
 			-->
 			<gmd:descriptiveKeywords>
 				<gmd:MD_Keywords>
@@ -250,6 +249,7 @@ Fiche de métadonnées :
 					</gmd:keyword>
 				</gmd:MD_Keywords>
 			</gmd:descriptiveKeywords>
+			<!-- mot clé supplémentaire / planification -->
 			<gmd:descriptiveKeywords>
 				<gmd:MD_Keywords>
 					<gmd:keyword>
@@ -257,7 +257,8 @@ Fiche de métadonnées :
 					</gmd:keyword>
 				</gmd:MD_Keywords>
 			</gmd:descriptiveKeywords>
-			<!-- mot clé "données ouvertes" pour le moissonnage par le site opendata.gouv.fr 
+			<!-- mot clé supplémentaire / "données ouvertes" 
+			il permet le moissonnage par le site opendata.gouv.fr 
 			IV.3. Mots clés libres (facultatifs)
 			(Cf. http://cnig.gouv.fr/wp-content/uploads/2014/01/Guide-de-saisie-des-%C3%A9l%C3%A9ments-de-m%C3%A9tadonn%C3%A9es-INSPIRE-v1.1-final.pdf)  Dans le cas de données sous licence ouverte, il convient d’ajouter un mot-clé «données ouvertes». 
 			-->
@@ -268,10 +269,10 @@ Fiche de métadonnées :
 					</gmd:keyword>
 				</gmd:MD_Keywords>
 			</gmd:descriptiveKeywords>
-			<!--Contraintes
+			<!--Contraintes d'accès et d'utilisation
 			>>(P9. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
 			<gmd:resourceConstraints>
-				<!-- Contraintes d'usage /  Information sur le type d'usage  / Aucune -->
+				<!-- Contraintes d'usage /  Information sur le type d'usage  / Aucune restriction d'accès et d'utilisation -->
 				<gmd:MD_Constraints>
 					<gmd:useLimitation>
 						<gco:CharacterString>Aucune condition ne s'applique</gco:CharacterString>
@@ -281,7 +282,7 @@ Fiche de métadonnées :
 			<gmd:resourceConstraints>
 				<!-- Contraintes légales -->
 				<gmd:MD_LegalConstraints>
-					<!-- <gmd:useLimitation><gco:CharacterString>Aucune condition d'accès ne s'applique</gco:CharacterString></gmd:useLimitation>-->
+					<gmd:useLimitation><gco:CharacterString>Aucune condition ne s'applique</gco:CharacterString></gmd:useLimitation>
 					<gmd:accessConstraints>
 						<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
 					</gmd:accessConstraints>
@@ -290,7 +291,7 @@ Fiche de métadonnées :
 					</gmd:otherConstraints>
 				</gmd:MD_LegalConstraints>
 			</gmd:resourceConstraints>
-			<!-- Contraintes de sécurité / 
+			<!-- Contraintes de sécurité / MD_SecurityConstraints 
 			Ne s'applique pas pour les doc. d'urbanisme 
 			-->
 			<!-- Type de représentation 
@@ -300,6 +301,7 @@ Fiche de métadonnées :
 			</gmd:spatialRepresentationType>
 			<!-- Résolution spatiale 
 			>>(P8. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) 
+			La valeur est assignée à 1 dans le modèle. Elle est à remplacer dans le cas réel.
 			Ex. : 5000
 			-->
 			<gmd:spatialResolution>
@@ -328,7 +330,8 @@ Fiche de métadonnées :
 				<gmd:MD_TopicCategoryCode>planningCadastre</gmd:MD_TopicCategoryCode>
 			</gmd:topicCategory>
 			<!-- Rectangle de délimitation géographique 
-			>>(P6. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
+			>>(P6. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) 
+			Mettre à jour les coordonnées longitude Est et Ouest, latitude Nord et Sud -->
 			<gmd:extent>
 				<gmd:EX_Extent>
 					<gmd:geographicElement>
@@ -355,7 +358,9 @@ Fiche de métadonnées :
 	<gmd:distributionInfo>
 		<gmd:MD_Distribution>
 			<!-- Encodage 
-			>>(P5. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
+			>>(P5. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) 
+			Format & Version : SHP 1.0, MIF/MID 4.5, GML 3.2.1, etc. 
+		    -->
 			<gmd:distributionFormat>
 				<gmd:MD_Format>
 					<gmd:name>
@@ -368,13 +373,91 @@ Fiche de métadonnées :
 			</gmd:distributionFormat>
 			<!-- Localisateur de la ressource 
 			>>(P3. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
+
 			<gmd:transferOptions>
 				<gmd:MD_DigitalTransferOptions>
+
+					<!-- Cas le plus simple conforme à Inspire 
+					le localisateur est une adresse de type URL-->
+
 					<gmd:onLine>
 						<gmd:CI_OnlineResource>
 							<gmd:linkage>
 								<gmd:URL>http://--organisme.fr/lien--</gmd:URL>
 							</gmd:linkage>
+						</gmd:CI_OnlineResource>
+					</gmd:onLine>
+
+
+					<!-- Cas le plus détaillé techniquement pour un localisateur 
+
+					Les éléments à saisir sont les suivants :
+
+					- si le localisateur est un "lien d'information" vers une page d'un site Internet:
+					 	<gmd:linkage>URL du localisateur sous la forme http://... </gmd:linkage>
+					 	<gmd:protocol>
+					 		<gco:CharacterString>WWW:LINK-1.0-http-link</gco:CharacterString>
+					 	</gmd:protocol>
+					 	<gmd:name>
+					 		<gco:CharacterString>Nom du site de l'organisme producteur ou lien vers un flux de données</gco:CharacterString>
+					 	</gmd:name>
+					 	<gmd:description>
+                			<gco:CharacterString>Description du localisateur</gco:CharacterString>
+              			</gmd:description>
+					 	<gmd:function>
+					 		<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="information"/>
+						</gmd:function>
+
+					- si le localisateur est un "lien de téléchargement" :
+					 	<gmd:linkage>URL du localisateur sous la forme http://... ou ftp://... </gmd:linkage>
+					 	<gmd:protocol>
+					 		<gco:CharacterString>WWW:DOWNLOAD-1.0-http-download</gco:CharacterString>
+					 	</gmd:protocol>
+					 	<gmd:name>
+					 		<gco:CharacterString>Nom du site de l'organisme producteur ou lien vers un flux de données</gco:CharacterString>
+					 	</gmd:name>
+					 	<gmd:description>
+                			<gco:CharacterString>Description du localisateur</gco:CharacterString>
+              			</gmd:description>
+					 	<gmd:function>
+					 		<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="download"/>
+						</gmd:function>
+
+					- si le localisateur est un "lien vers un service de visualisation" de type OGC :
+					 	<gmd:linkage>URL du localisateur sous la forme http://... </gmd:linkage>
+					 	<gmd:protocol>
+					 		<gco:CharacterString>OGC:WMS-1.1.1-http-get-map</gco:CharacterString>
+					 	</gmd:protocol>
+					 	<gmd:name>
+					 		<gco:CharacterString>Nom du site de l'organisme producteur ou lien vers un flux de données</gco:CharacterString>
+					 	</gmd:name>
+					 	<gmd:description>
+                			<gco:CharacterString>Description du localisateur</gco:CharacterString>
+              			</gmd:description>
+					 	<gmd:function>
+					 		<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="information"/>
+						</gmd:function>
+					-->
+					<!-- cas d'un localisateur détaillé
+					Mettre à jour les informations : protocole, name, description, function
+					 -->
+					<gmd:onLine>
+						<gmd:CI_OnlineResource>
+							<gmd:linkage>
+								<gmd:URL>http://--organisme.fr/lien_visu--</gmd:URL>
+							</gmd:linkage>
+							<gmd:protocol>
+								<gco:CharacterString>--Protocole--</gco:CharacterString>
+							</gmd:protocol>
+							<gmd:name>
+								<gco:CharacterString>--Nom du site de l'organisme producteur ou lien vers un flux de données--</gco:CharacterString>
+							</gmd:name>
+							<gmd:description>
+                				<gco:CharacterString>--Description du localisateur--</gco:CharacterString>
+              				</gmd:description>
+							<gmd:function>
+								<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="download"/>
+							</gmd:function>
 						</gmd:CI_OnlineResource>
 					</gmd:onLine>
 				</gmd:MD_DigitalTransferOptions>
@@ -455,7 +538,8 @@ Fiche de métadonnées :
 				</gmd:DQ_DomainConsistency>
 			</gmd:report>
 			<!-- Généalogie 
-			>>(P7. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
+			>>(P7. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) 
+			Mettre à jour la version du guide des prescriptions -->
 			<gmd:lineage>
 				<gmd:LI_Lineage>
 					<gmd:statement>
