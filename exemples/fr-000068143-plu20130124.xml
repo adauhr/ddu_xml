@@ -173,15 +173,10 @@
 				</gmd:MD_Keywords>
 			</gmd:descriptiveKeywords>
 			<gmd:resourceConstraints>
-				<gmd:MD_Constraints>
+				<gmd:MD_LegalConstraints>
 					<gmd:useLimitation>
 						<gco:CharacterString>Aucune condition ne s'applique</gco:CharacterString>
 					</gmd:useLimitation>
-				</gmd:MD_Constraints>
-			</gmd:resourceConstraints>
-			<gmd:resourceConstraints>
-				<gmd:MD_LegalConstraints>
-					<gmd:useLimitation><gco:CharacterString>Aucune condition ne s'applique</gco:CharacterString></gmd:useLimitation>
 					<gmd:accessConstraints>
 						<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
 					</gmd:accessConstraints>
@@ -263,9 +258,6 @@
 							<gmd:description>
                 				<gco:CharacterString>Téléchargement du fichier du Plan Local d’Urbanisme de Holtzwihr</gco:CharacterString>
               				</gmd:description>
-							<gmd:function>
-								<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="download"/>
-							</gmd:function>
 						</gmd:CI_OnlineResource>
 					</gmd:onLine>
 				</gmd:MD_DigitalTransferOptions>
