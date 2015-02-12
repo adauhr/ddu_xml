@@ -271,18 +271,17 @@ Fiche de métadonnées :
 			</gmd:descriptiveKeywords>
 			<!--Contraintes d'accès et d'utilisation
 			>>(P9. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
+			<!-- 
+				Contraintes d'usage /  Information sur le type d'usage  / ne s'applique pas dans ce cas 
+			-->
+			<!-- 
+				Contraintes légales
+			-->
 			<gmd:resourceConstraints>
-				<!-- Contraintes d'usage /  Information sur le type d'usage  / Aucune restriction d'accès et d'utilisation -->
-				<gmd:MD_Constraints>
+				<gmd:MD_LegalConstraints>
 					<gmd:useLimitation>
 						<gco:CharacterString>Aucune condition ne s'applique</gco:CharacterString>
 					</gmd:useLimitation>
-				</gmd:MD_Constraints>
-			</gmd:resourceConstraints>
-			<gmd:resourceConstraints>
-				<!-- Contraintes légales -->
-				<gmd:MD_LegalConstraints>
-					<gmd:useLimitation><gco:CharacterString>Aucune condition ne s'applique</gco:CharacterString></gmd:useLimitation>
 					<gmd:accessConstraints>
 						<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
 					</gmd:accessConstraints>
@@ -337,16 +336,16 @@ Fiche de métadonnées :
 					<gmd:geographicElement>
 						<gmd:EX_GeographicBoundingBox>
 							<gmd:westBoundLongitude>
-								<gco:Decimal>-180</gco:Decimal>
+								<gco:Decimal>-7.206864952038359</gco:Decimal>
 							</gmd:westBoundLongitude>
 							<gmd:eastBoundLongitude>
-								<gco:Decimal>180</gco:Decimal>
+								<gco:Decimal>10.547041295490223</gco:Decimal>
 							</gmd:eastBoundLongitude>
 							<gmd:southBoundLatitude>
-								<gco:Decimal>-90</gco:Decimal>
+								<gco:Decimal>40.846997452979764</gco:Decimal>
 							</gmd:southBoundLatitude>
 							<gmd:northBoundLatitude>
-								<gco:Decimal>90</gco:Decimal>
+								<gco:Decimal>52.58965024919093</gco:Decimal>
 							</gmd:northBoundLatitude>
 						</gmd:EX_GeographicBoundingBox>
 					</gmd:geographicElement>
@@ -373,92 +372,56 @@ Fiche de métadonnées :
 			</gmd:distributionFormat>
 			<!-- Localisateur de la ressource 
 			>>(P3. 140707_consignes_saisie_metadonnees_documents_urbanisme.pdf) -->
-
 			<gmd:transferOptions>
 				<gmd:MD_DigitalTransferOptions>
-
-					<!-- Cas le plus simple conforme à Inspire 
-					le localisateur est une adresse de type URL-->
-
+					<!-- 
+						Cas à promouvoir, conforme à Inspire : 
+						+ un localisateur pour le téléchargement :
+							- le localisateur est une adresse de type URL vers un fichier compressé à télécharger
+							- le protocol de téléchargement
+							- le nom du protocole utilisé
+							- la description du localisateur
+						+ un localisateur pour la visulalisation (optionnel s'il n'existe pas, merci de supprimer les éléments entre la balise <gmd:onLine>...</gmd:onLine>) :
+							- le localisateur est une adresse de type URL
+							- le protocol de visualisation
+							- le nom du protocole utilisé
+							- la description du localisateur
+					--->
+					<!-- localisateur de téléchargement -->
 					<gmd:onLine>
 						<gmd:CI_OnlineResource>
 							<gmd:linkage>
-								<gmd:URL>http://--organisme.fr/lien--</gmd:URL>
-							</gmd:linkage>
-						</gmd:CI_OnlineResource>
-					</gmd:onLine>
-
-					<!-- Cas le plus détaillé techniquement pour un localisateur 
-
-					Les éléments à saisir sont les suivants :
-
-					- si le localisateur est un "lien d'information" vers une page d'un site Internet:
-					 	<gmd:linkage>URL du localisateur sous la forme http://... </gmd:linkage>
-					 	<gmd:protocol>
-					 		<gco:CharacterString>WWW:LINK-1.0-http-link</gco:CharacterString>
-					 	</gmd:protocol>
-					 	<gmd:name>
-					 		<gco:CharacterString>Nom du site de l'organisme producteur ou lien vers un flux de données</gco:CharacterString>
-					 	</gmd:name>
-					 	<gmd:description>
-                			<gco:CharacterString>Description du localisateur</gco:CharacterString>
-              			</gmd:description>
-					 	<gmd:function>
-					 		<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="information"/>
-						</gmd:function>
-
-					- si le localisateur est un "lien de téléchargement" :
-					 	<gmd:linkage>URL du localisateur sous la forme http://... ou ftp://... </gmd:linkage>
-					 	<gmd:protocol>
-					 		<gco:CharacterString>WWW:DOWNLOAD-1.0-http-download</gco:CharacterString>
-					 	</gmd:protocol>
-					 	<gmd:name>
-					 		<gco:CharacterString>Nom du site de l'organisme producteur ou lien vers un flux de données</gco:CharacterString>
-					 	</gmd:name>
-					 	<gmd:description>
-                			<gco:CharacterString>Description du localisateur</gco:CharacterString>
-              			</gmd:description>
-					 	<gmd:function>
-					 		<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="download"/>
-						</gmd:function>
-
-					- si le localisateur est un "lien vers un service de visualisation" de type OGC :
-					 	<gmd:linkage>URL du localisateur sous la forme http://... </gmd:linkage>
-					 	<gmd:protocol>
-					 		<gco:CharacterString>OGC:WMS-1.1.1-http-get-map</gco:CharacterString>
-					 	</gmd:protocol>
-					 	<gmd:name>
-					 		<gco:CharacterString>Nom du site de l'organisme producteur ou lien vers un flux de données</gco:CharacterString>
-					 	</gmd:name>
-					 	<gmd:description>
-                			<gco:CharacterString>Description du localisateur</gco:CharacterString>
-              			</gmd:description>
-					 	<gmd:function>
-					 		<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="information"/>
-						</gmd:function>
-					-->
-					<!-- cas d'un localisateur détaillé
-					Mettre à jour les informations : protocole, name, description, function
-					 -->
-					<gmd:onLine>
-						<gmd:CI_OnlineResource>
-							<gmd:linkage>
-								<gmd:URL>http://--organisme.fr/lien--</gmd:URL>
+								<gmd:URL>http://--organisme.fr/lien_téléchargement--</gmd:URL>
 							</gmd:linkage>
 							<gmd:protocol>
-								<gco:CharacterString>--Protocole--</gco:CharacterString>
+								<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
 							</gmd:protocol>
 							<gmd:name>
-								<gco:CharacterString>--Nom du site de l'organisme producteur ou lien vers un flux de données--</gco:CharacterString>
+								<gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
 							</gmd:name>
 							<gmd:description>
-                				<gco:CharacterString>--Description du localisateur--</gco:CharacterString>
-              				</gmd:description>
-							<gmd:function>
-								<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="download"/>
-							</gmd:function>
+								<gco:CharacterString>--Description du localisateur--</gco:CharacterString>
+							</gmd:description>
 						</gmd:CI_OnlineResource>
 					</gmd:onLine>
+					<!-- localisateur de visualisation -->
+					<gmd:onLine>
+						<gmd:CI_OnlineResource>
+							<gmd:linkage>
+								<gmd:URL>http://--organisme.fr/lien_visualisation--</gmd:URL>
+							</gmd:linkage>
+							<gmd:protocol>
+								<gco:CharacterString>WWW:WMS</gco:CharacterString>
+							</gmd:protocol>
+							<gmd:name>
+								<gco:CharacterString>--Nom de la donnée--</gco:CharacterString>
+							</gmd:name>
+							<gmd:description>
+								<gco:CharacterString>--Description du localisateur--</gco:CharacterString>
+							</gmd:description>
+						</gmd:CI_OnlineResource>
+					</gmd:onLine>
+					<!-- fin du localisateur de visualisation -->
 				</gmd:MD_DigitalTransferOptions>
 			</gmd:transferOptions>
 		</gmd:MD_Distribution>
@@ -542,7 +505,7 @@ Fiche de métadonnées :
 			<gmd:lineage>
 				<gmd:LI_Lineage>
 					<gmd:statement>
-						<gco:CharacterString>Document d’urbanisme numérisé conformément aux prescriptions nationales du CNIG du 2 octobre 2014, dans le cadre du marché XXXXXX  et contrôlé par XXXX. Ce lot de données produit en 20XX, a été numérisé  à partir du PCI Vecteur en 20XX.</gco:CharacterString>
+						<gco:CharacterString>Document d’urbanisme numérisé conformément aux prescriptions nationales du CNIG du JJ/MM/AAAA, dans le cadre du marché XXXXXX  et contrôlé par XXXX. Ce lot de données produit en 20XX, a été numérisé  à partir du PCI Vecteur en 20XX.</gco:CharacterString>
 					</gmd:statement>
 				</gmd:LI_Lineage>
 			</gmd:lineage>
