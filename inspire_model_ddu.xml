@@ -139,11 +139,11 @@ Fiche de métadonnées Version 1.1 :
 					Ex. : ...
 					-->
 					<gmd:identifier>
-						<gmd:RS_Identifier>
+						<gmd:MD_Identifier>
 							<gmd:code>
 								<gco:CharacterString>--Identificateur de ressource unique--</gco:CharacterString>
 							</gmd:code>
-						</gmd:RS_Identifier>
+						</gmd:MD_Identifier>
 					</gmd:identifier>
 				</gmd:CI_Citation>
 			</gmd:citation>
