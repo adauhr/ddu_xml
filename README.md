@@ -8,6 +8,7 @@
 
 ###Dates
     Février 2015
+    Juin 2016 - Modification gmd:RS_Identifier par MD_Identifier
 ###Sujet
     Fourniture d'un modèle XML de fiche de métadonnées sur les documents
     d’urbanisme de type : Plan d'Occupation des Sols (POS),  Plan Local
@@ -18,7 +19,7 @@
     Ce présent document décrit le contenu du modèle XML relatif au 
     document d'urbanisme
 ###Version
-    V1.0
+    V1.1
 ###Contributeurs
     ADAUHR/D.Esnault
     Région Bretagne/L. Ecault
