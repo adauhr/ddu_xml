@@ -71,11 +71,11 @@
 						</gmd:CI_Date>
 					</gmd:date>
 					<gmd:identifier>
-						<gmd:RS_Identifier>
+						<gmd:MD_Identifier>
 							<gmd:code>
 								<gco:CharacterString>fr-000068143-plu20130124</gco:CharacterString>
 							</gmd:code>
-						</gmd:RS_Identifier>
+						</gmd:MD_Identifier>
 					</gmd:identifier>
 				</gmd:CI_Citation>
 			</gmd:citation>
