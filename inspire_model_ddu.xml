@@ -386,7 +386,7 @@ Fiche de métadonnées Version 1.1 :
 							- le protocol de visualisation
 							- le nom du protocole utilisé
 							- la description du localisateur
-					--->
+					-->
 					<!-- localisateur de téléchargement -->
 					<gmd:onLine>
 						<gmd:CI_OnlineResource>
